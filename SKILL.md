@@ -47,3 +47,5 @@ KEEL_PROVIDER=mock keel run --plan examples/trusted.mjs    # offline (no process
 
 ## When NOT to use
 - Fully trusted, internal-only data with no audit requirement → use `sieve` instead.
+- **Outbound network filtering**: For sandbox egress network firewalls and PII filtering of outbound traffic → use `sentinel-egress-guard` instead.
+- **Outbound network filtering**: For sandbox egress network firewalls and PII filtering of outbound traffic → use `sentinel-egress-guard` instead.
