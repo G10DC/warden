@@ -47,18 +47,13 @@ KEEL_PROVIDER=mock keel run --plan examples/trusted.mjs    # offline (no process
 
 ## When NOT to use
 - Fully trusted, internal-only data with no audit requirement → use `sieve` instead.
-<<<<<<< HEAD
 - **Outbound network filtering**: For sandbox egress network firewalls and PII filtering of outbound traffic → use `sentinel-egress-guard` instead.
-- **Outbound network filtering**: For sandbox egress network firewalls and PII filtering of outbound traffic → use `sentinel-egress-guard` instead.
-=======
-
 
 ---
 
-## ⚡ Spark Breakthrough Enhancement
+## Spark Breakthrough Enhancement
 
 - **Feature**: **Instruction-Data Isolation Firewall**
 - **Description**: Enforces strict trust boundaries on untrusted external inputs.
 - **Synergy**: Integrated with `sentinel` (egress guard) & `keel` (audit trail).
 - **Framework**: Applied via the `spark` 4-Lens Lateral Ideation Engine.
->>>>>>> d50fd6d (feat(spark): integrate spark breakthrough enhancements into warden)
