@@ -1,6 +1,6 @@
 ---
 name: warden
-description: Harden a pipeline that mixes trusted instructions with UNTRUSTED data before it reaches an processing engine. Use keel's trust primitives — separateInstructionData (anti prompt-injection), createPolicy (frozen per-task policy), provenance (source-tagged), AuditLog (tamper-evident) — when the flow ingests external/scraped/user content or needs a replay-grade audit trail. Never feed untrusted content into the instruction channel; never run without a frozen policy.
+description: Harden a pipeline that mixes trusted instructions with UNTRUSTED data before it reaches a processing engine. Use keel's trust primitives — separateInstructionData (anti prompt-injection), createPolicy (frozen per-task policy), provenance (source-tagged), AuditLog (tamper-evident) — when the flow ingests external/scraped/user content or needs a replay-grade audit trail. Never feed untrusted content into the instruction channel; never run without a frozen policy.
 ---
 
 # warden
@@ -42,10 +42,23 @@ KEEL_PROVIDER=mock keel run --plan examples/trusted.mjs    # offline (no process
 ```
 
 ## When to use
-- Pipelines that ingest external / scraped / user content and feed it to an processing engine.
+- Pipelines that ingest external / scraped / user content and feed it to a processing engine.
 - Any flow needing a tamper-evident, replayable audit trail (compliance, incident review).
 
 ## When NOT to use
 - Fully trusted, internal-only data with no audit requirement → use `sieve` instead.
+<<<<<<< HEAD
 - **Outbound network filtering**: For sandbox egress network firewalls and PII filtering of outbound traffic → use `sentinel-egress-guard` instead.
 - **Outbound network filtering**: For sandbox egress network firewalls and PII filtering of outbound traffic → use `sentinel-egress-guard` instead.
+=======
+
+
+---
+
+## ⚡ Spark Breakthrough Enhancement
+
+- **Feature**: **Instruction-Data Isolation Firewall**
+- **Description**: Enforces strict trust boundaries on untrusted external inputs.
+- **Synergy**: Integrated with `sentinel` (egress guard) & `keel` (audit trail).
+- **Framework**: Applied via the `spark` 4-Lens Lateral Ideation Engine.
+>>>>>>> d50fd6d (feat(spark): integrate spark breakthrough enhancements into warden)
