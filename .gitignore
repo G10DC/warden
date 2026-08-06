@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+
+# System & Cache
+.DS_Store
+Thumbs.db
+.ast-cache.json
+*.log
+.env
+.internal/
+scratch/
