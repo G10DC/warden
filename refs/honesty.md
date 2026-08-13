@@ -1,6 +1,6 @@
 # Warden Instruction/Data Trust Boundary Honesty Bounds
 
-The honesty layer is the operational expression of the **G10DC Trellis Standard**: **the processing engine reasons over verified evidence with stated confidence, never hallucinates capabilities or impact.**
+The honesty layer is the operational expression of the **G10DC Trellis Standard**: **the LLM reasons over verified evidence with stated confidence, never hallucinates capabilities or impact.**
 
 ## Domain & Scope
 **Domain**: Anti-Prompt Injection & Data Pipeline Guard
@@ -8,7 +8,7 @@ The honesty layer is the operational expression of the **G10DC Trellis Standard*
 ## Core Epistemic Rules
 
 1. **Keel Integration: Implements keel trust primitives (separateInstructionData, createPolicy, provenance, AuditLog).**
-2. **Sanitizer Invariant: External scraped data is tagged as untrusted provenance and sanitized before processing engine ingestion.**
+2. **Sanitizer Invariant: External scraped data is tagged as untrusted provenance and sanitized before LLM ingestion.**
 3. **Confidence Rating: High (keel trust harness active & verified), Medium (sanitizer active), Low (raw untrusted ingestion).**
 
 ## Three-Tier Confidence Model
